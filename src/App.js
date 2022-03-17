@@ -9,10 +9,10 @@ function App() {
     setUsersData((prevState) => [...prevState, {...user, id: Math.random().toString()}]);
   };
   return (
-    <div>
+    <>
       <AddUser onAddUser={addUserHandler} />
       <UsersList users={usersData} />
-    </div>
+    </>
   );
 }
 
